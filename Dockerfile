@@ -10,4 +10,4 @@ RUN apk add --no-cache curl \
 WORKDIR /gost
 EXPOSE ${TLS_PORT} $PORT
 
-CMD exec /gost/gost  -L=https://:443   -L=http://:8080
+CMD exec /gost/gost  -L=https://:4433   -L=http://:8080
